@@ -1,0 +1,251 @@
+@media screen and (min-width: 800px) {
+
+    /*HEADER -------------------*/
+
+
+    header {
+        .logo {
+            width: 2.5%;
+            margin: unset;
+            margin-left: 6.9%;
+        }
+
+        nav {
+            width: unset;
+            margin: unset;
+            margin-right: 6.9%;
+
+            input {
+                display: none;
+            }
+            label {
+                display: none;
+            }
+
+            ul {
+                display: flex;
+                justify-content: space-between;
+                align-content: center;
+                position: unset;
+                background-color: unset;
+                height: unset;
+
+                li {
+                    height: unset;
+                    margin-top: 0px;
+
+                    a {                                 
+                        color: $color-primary;
+                        font-size: $font-size-a-desk;
+                        transition: 0.2s linear all;
+                        font-family: $font-secondary;
+                            
+
+                        &:hover {
+                            color: $color-secondary;
+                            text-decoration: line-through;
+                        }
+
+                        &:active {
+                            color: $color-primary;
+                            opacity: 0.56;
+                            text-decoration: line-through;
+                         }
+                    }
+                }
+            }
+        }    
+    }
+
+    /*MAIN MQ*-----------------*/
+    main {
+           
+        /*GENERAL MAIN MQ---------*/
+
+        h2 {
+            font-size: $font-size-h2-desk;
+        }
+
+        p {
+            font-size: $font-size-p-desk;
+        }
+
+        /* PRESENTATION -----------------------*/
+
+        .presentation {
+            margin-left: 15vw; 
+            margin-bottom: 0;
+            align-items: flex-start;
+
+            h1 {
+                font-size: $font-size-h1-desk;
+                .dot{
+                    color: #0000EC;
+                    font-size: $font-size-h1-desk;
+                }
+                .jump {
+                        display: none;
+                }
+            }
+
+            button {
+                margin-top: 2em;
+                margin-bottom: 0px;
+                max-width: 226px;
+                font-size: $font-size-btn-desk;
+            }
+
+            p {
+                width: 50vw;
+            }
+        }
+
+        /*EPISODES MQ -------------------*/
+
+        .episodes {
+            clip-path: polygon(0 8%, 100% 0, 100% 92%, 0 100%);
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 10fr 40fr 10fr;
+            height: 1000px;
+
+            h2 {
+                grid-row: 1/2;
+                margin: 12vw 0 3vw 15vw;
+                font-size: $font-size-h2-desk;
+
+            }
+
+            .list_episodes {
+                grid-row: 2/3;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                justify-items: center;
+                padding: 0 5vw;
+                
+            }
+
+
+        }
+
+        /*US MQ ----------------------------*/
+
+        .us {
+            position: unset;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+            img {
+                transform: translateY(-100px);
+                width: 32.2%;
+                margin-left: 10vw;
+            }
+            .container-us {
+                width: 32.2%;
+                margin-bottom: 0px;
+
+
+      
+                h2 {
+                    padding-top: 0;
+                    br {
+                        display: none;
+                    }
+                }
+                p {
+                    margin-top: 1em;
+                }
+            }
+
+
+        }
+
+        /*INTERVIEWS MQ ----------------------------*/
+
+        .interviews {
+            position: unset;
+            bottom: unset; /*prueba*/
+
+            h2 {
+                margin-top: 0px;
+                padding-top: 0px;
+                margin-left: 15vw;
+            }
+
+            .images_interviews {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+
+                img {
+                    max-width: 100vw;
+                }
+                
+            }
+        }
+
+        /*TOPICS MQ ----------------------------*/
+
+        .topics {
+            position: unset;
+            bottom: unset;/*prueba*/
+
+            h2 {
+                margin-left: 15vw;
+            }
+            .container_icon {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                margin-bottom: 5vw;
+
+                .icon {
+                    width: 18.1%;
+                    padding: 0 1.5vw;
+                    
+                    img {
+                        width:auto;
+                        padding: 5vw 3vw;
+                    }
+
+                    span {
+                        padding: 0;
+                        width: auto;
+                    }
+                }
+            }
+        }
+
+        /*NEWS MQ ----------------------------*/
+        .news {
+            position: unset;
+            bottom: unset; /*prueba*/
+            clip-path: polygon(0 25%, 100% 0%, 100% 100%, 0% 100%);
+            padding: 5vw;
+
+            button {
+                width: 40vw;
+                font-size: $font-size-btn-desk;
+            }
+        }
+    }
+    
+    /*FOOTER MQ ----------------------------*/
+    footer {
+        transform: translateY(150px);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        
+        p {
+            margin: 1vw 7vw;
+        }
+        .social_media {
+            margin: 1vw 7vw;
+        }
+        
+
+    }
+}

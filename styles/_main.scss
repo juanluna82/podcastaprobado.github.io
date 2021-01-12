@@ -1,0 +1,212 @@
+main {
+
+    /*GENERALES--------------------------*/
+    h2 {
+        font-size: $font-size-h2-mob;
+    }
+
+    p {
+        font-size: $font-size-p-mob;
+        font-family: $font-secondary;
+    }
+
+    button {   
+        background-color: $color-secondary;
+        width: 100%;
+        min-height: 3em;
+        max-width: 300px;
+        border:none;
+        font-size: $font-size-btn-mob;
+        font-weight: bold;
+        font-family: $font-secondary;
+
+        a {
+            text-decoration: none;
+            color: $color-primary;
+        }
+    }
+
+    /*PRESENTATION--------------------*/
+
+    .presentation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 5vw;
+
+
+        h1 {
+            font-size: $font-size-h1-mob;
+            margin-top: 0.5em;
+            align-self: flex-start;
+            
+            .world {
+                text-decoration: line-through;
+            }
+        }
+
+        p {
+            margin-top: 1em;
+            text-align: justify;
+        }
+
+        .btn_presentation {
+            margin: 1.5em 0 1em 0;
+            transition: 0.2s linear all;
+            
+
+            &:hover {
+                background: rgb(0,240,184);
+                background: linear-gradient(90deg, rgba(0,240,184,1) 0%, rgba(0,0,254,1) 100%);
+                color: $color-white;
+            }
+        }
+    }
+
+    /*EPISODES-----------------------*/
+
+    .episodes {
+        @include color-gradient;
+        clip-path: polygon(0 3%, 100% 0, 100% 97%, 0 100%);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 1500px;
+
+        
+
+        h2 {
+            color: $color-white;
+            margin: 2em 0 0 5vw;
+        }
+         
+
+        .list_episodes {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            z-index: 3;
+
+            iframe {
+                    width: 90%;
+                    height: 300px;
+                }
+        }
+
+        .container_space {
+            height: 20vh;
+        }
+    }
+    /*US-------------------------------*/
+    .us {
+
+        position: relative;
+        bottom: 150px;
+
+        
+        img {
+            width: 100%;
+        }
+        .container-us {
+            margin: 5vw;
+
+
+            h2 {
+                padding-top: 0.5em;
+            }
+            p {
+                margin-top: 1em;
+            }
+        }
+    }
+
+    /*INTERVIEWS-------------------------------*/
+
+    .interviews {
+        position: relative;
+        bottom: 150px;
+        
+        h2{
+            padding-top: 0.5em;
+            margin: 5vw;
+        }
+        
+        .images_interviews{
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            align-items: center;
+
+            img {
+                display: flex;
+                width: 100%;
+
+            }
+
+        }
+    }
+
+    /*TOPICS-------------------------------*/
+
+    .topics {
+        position: relative;
+        bottom: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        h2{
+            padding-top: 0.5em;
+            margin: 5vw;
+            align-self: flex-start;
+        }
+
+        .icon {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 5vw 0 5vw 0;
+
+            img {
+                width: 90vw;
+                height: 6.5em;
+                padding: 5vw;
+            }
+            
+            span {
+                font-size: $font-size-icon-mob;
+                padding: 5vw;
+                text-align: center;
+                font-weight: bold;
+            }
+        }
+    }
+
+    /*NEWS-------------------------------*/
+
+    .news {
+        @include color-gradient;
+        clip-path: polygon(0 6%, 100% 0%, 100% 100%, 0% 100%);
+        position: relative;
+        bottom: 150px;
+        height: 341px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+        h2 {
+            color: $color-white;
+            margin-bottom: 0.5em;
+        }
+
+        .btn_news {
+            margin: 1em 5vw;
+        }
+    }
+}
+

@@ -1,0 +1,28 @@
+$color-black: black;
+$color-white: #FFFFFF;
+$color-primary: #060A24;
+$color-secondary: #00F3BB;
+$color-blue: #0000EC;
+
+@mixin color-gradient {
+    background: rgb(0,0,163);
+    background: linear-gradient(90deg, rgba(0,0,163,1) 0%, rgba(0,0,255,1) 100%);
+
+}
+
+$font-secondary: 'IBM Plex Mono', monospace;
+$font-size-h1-mob: 2.25em;
+$font-size-h2-mob: 2.25em;
+$font-size-p-mob: 0.875em;
+$font-size-btn-mob: 1em;
+$font-size-icon-mob: 1.5em;
+
+$font-size-h1-desk: 5vw;
+$font-size-h2-desk: 3em;
+$font-size-p-desk: 1em;
+$font-size-btn-desk: 1.125em;
+$font-size-a-desk: 1em;
+
+
+
+
